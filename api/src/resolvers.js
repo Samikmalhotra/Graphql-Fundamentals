@@ -6,7 +6,10 @@
 module.exports = {
   Query: {
     pets(_, {input}, ctx){
-      return ctx.models.Pet.findMany()
+      return ctx.models.Pet.findMany(input)
+    },
+    pet(_, {input},ctx){
+      return ctx.models.Pet.findOne(input)
     }
   },
   // Mutation: {

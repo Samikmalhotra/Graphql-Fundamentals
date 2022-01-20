@@ -14,6 +14,7 @@ const typeDefs = gql`
       createdAt: String!
       name: String!
       type: String!
+      buddies: [Pet]
   }
 
   input PetInput{
@@ -23,6 +24,7 @@ const typeDefs = gql`
 
   type Query{
       pets(input: PetInput!): [Pet]!  
+      pet(input: PetInput): Pet
   }
 
 `;
