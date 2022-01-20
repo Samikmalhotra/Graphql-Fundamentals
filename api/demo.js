@@ -1,5 +1,5 @@
 const gql = require('graphql-tag')
-const {ApolloServer} = require('apolloserver')
+const {ApolloServer} = require('apollo-server')
 
 const typeDefs = gql`
     type User{
