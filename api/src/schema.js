@@ -27,6 +27,10 @@ const typeDefs = gql`
       pet(input: PetInput): Pet
   }
 
+  type Mutation{
+      
+  }
+
 `;
 
 module.exports = typeDefs
