@@ -5,7 +5,9 @@
 
 module.exports = {
   Query: {
-    
+    demo(_, __, {models}){
+      models.Pet.findMany({})
+    }
   },
   Mutation: {
     
