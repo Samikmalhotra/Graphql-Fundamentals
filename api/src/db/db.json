@@ -8,19 +8,24 @@
       "id": "1",
       "createdAt": "46595156",
       "name": "bruno",
-      "type": "DOG"
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "2",
       "createdAt": "48418914",
       "name": "Daryl",
-      "type": "CAT"
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+
     },
     {
       "id": "BYA7V2m3XYWntoxlg-ZH3",
       "createdAt": 1642718953472,
       "name": "Daryl",
-      "type": "CAT"
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+
     }
   ]
 }
