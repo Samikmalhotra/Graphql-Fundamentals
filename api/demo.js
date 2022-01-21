@@ -63,14 +63,16 @@ const user = {
     shoes: []
 }
 
+const shoes = [
+{brand: 'NIKE', size: 12, user: 1},
+{brand: 'ADIDAS', size: 12, sport: 'basketball', user: 1},
+{brand: 'PUMA', size: 12}
+]
+
 const resolvers = {
     Query: {
         shoes(_, {input}){
-            return [
-                {brand: 'NIKE', size: 12, user: 1},
-                {brand: 'ADIDAS', size: 12, sport: 'basketball', user: 1},
-                {brand: 'PUMA', size: 12}
-            ]
+            return shoes
         },
         me() {
             return user
@@ -79,6 +81,11 @@ const resolvers = {
     Mutation:{
         newShoe(_,{input}){
             return input
+        }
+    },
+    User: {
+        shoes(){
+            return shoes
         }
     },
     Shoe: {
