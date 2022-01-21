@@ -2,6 +2,7 @@ const gql = require('graphql-tag')
 const {ApolloServer} = require('apollo-server')
 
 const typeDefs = gql`
+    union Footwear = Sneaker | Boot
     enum ShoeType {
         JORDAN
         NIKE
@@ -43,7 +44,7 @@ const typeDefs = gql`
 
     type Query{
         me: User!
-        shoes(input: ShoesInput): [Shoe]!
+        shoes(input: ShoesInput): [Footwear]!
     }
 
     type Mutation{
