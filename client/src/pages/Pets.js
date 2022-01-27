@@ -14,30 +14,51 @@ const ALL_PETS = gql`
     }
   }
 ` 
+const NEW_PET = gql`
+  mutation CreateAPet($input: NewPetInput!){
+  newPet(input: $input) {
+    id
+    name
+    type
+  }
+}
+`
 
 export default function Pets () {
   const [modal, setModal] = useState(false)
   const {data, loading, error} = useQuery(ALL_PETS)
+  const [createPet, newPet] = useMutation(NEW_PET, {
+    update(cache, {data: {newPet}}){
+      const data = cache.readQuery({query: ALL_PETS})
+      cache.writeQuery({
+        query: ALL_PETS,
+        data: {pets: [newPet, ...data.pets]}
+      })
+    }
+  })
 
 
   const onSubmit = input => {
     setModal(false)
+    createPet({
+      variables: {input: input}
+    })
   }
 
-  // const petsList = pets.data.pets.map(pet => (
-  //   <div className="col-xs-12 col-md-4 col" key={pet.id}>
-  //     <div className="box">
-  //       <PetBox pet={pet} />
-  //     </div> 
-  //   </div>
-  // ))
+  const petsList = data && data.pets.map(pet => (
+    <div className="col-xs-12 col-md-4 col" key={pet.id}>
+      <div className="box">
+        <PetBox pet={pet} />
+      </div> 
+    </div>
+  ))
 
-  if(loading){
+  if(loading || newPet.loading){
     return <Loader/>
   }
 
-  if(error){
-    return <p>error</p>
+  if(error || newPet.error){
+    return <p>{newPet.error}</p>
   }
   
   if (modal) {
@@ -65,7 +86,7 @@ export default function Pets () {
       </section>
       <section>
         <div className="row">
-          {/* {petsList} */}
+          {petsList? petsList : ''}
         </div>
       </section>
     </div>
