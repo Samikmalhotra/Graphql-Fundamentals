@@ -12,13 +12,13 @@ export default function Pets () {
     setModal(false)
   }
 
-  const petsList = pets.data.pets.map(pet => (
-    <div className="col-xs-12 col-md-4 col" key={pet.id}>
-      <div className="box">
-        <PetBox pet={pet} />
-      </div>
-    </div>
-  ))
+  // const petsList = pets.data.pets.map(pet => (
+  //   <div className="col-xs-12 col-md-4 col" key={pet.id}>
+  //     <div className="box">
+  //       <PetBox pet={pet} />
+  //     </div>
+  //   </div>
+  // ))
   
   if (modal) {
     return (
@@ -45,7 +45,7 @@ export default function Pets () {
       </section>
       <section>
         <div className="row">
-          {petsList}
+          {/* {petsList} */}
         </div>
       </section>
     </div>
