@@ -30,7 +30,7 @@ const typeDefs = gql`
   }
 
   type Query{
-      pets(input: PetInput!): [Pet]!  
+      pets(input: PetInput): [Pet]!  
       pet(input: PetInput): Pet
   }
 
