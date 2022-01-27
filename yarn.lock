@@ -1999,6 +1999,14 @@
     "apollo-env" "^0.5.1"
     "lodash.sortby" "^4.7.0"
 
+"apollo-link-context@^1.0.20":
+  "integrity" "sha512-MLLPYvhzNb8AglNsk2NcL9AvhO/Vc9hn2ZZuegbhRHGet3oGr0YH9s30NS9+ieoM0sGT11p7oZ6oAILM/kiRBA=="
+  "resolved" "https://registry.npmjs.org/apollo-link-context/-/apollo-link-context-1.0.20.tgz"
+  "version" "1.0.20"
+  dependencies:
+    "apollo-link" "^1.2.14"
+    "tslib" "^1.9.3"
+
 "apollo-link-http-common@^0.2.15":
   "integrity" "sha512-+Heey4S2IPsPyTf8Ag3PugUupASJMW894iVps6hXbvwtg1aHSNMXUYO5VG7iRHkPzqpuzT4HMBanCTXPjtGzxg=="
   "resolved" "https://registry.npmjs.org/apollo-link-http-common/-/apollo-link-http-common-0.2.15.tgz"
@@ -2017,15 +2025,15 @@
     "apollo-link-http-common" "^0.2.15"
     "tslib" "^1.9.3"
 
-"apollo-link@^1.0.0", "apollo-link@^1.2.13", "apollo-link@^1.2.3":
-  "integrity" "sha512-+iBMcYeevMm1JpYgwDEIDt/y0BB7VWyvlm/7x+TIPNLHCTCMgcEgDuW5kH86iQZWo0I7mNwQiTOz+/3ShPFmBw=="
-  "resolved" "https://registry.npmjs.org/apollo-link/-/apollo-link-1.2.13.tgz"
-  "version" "1.2.13"
+"apollo-link@^1.0.0", "apollo-link@^1.2.13", "apollo-link@^1.2.14", "apollo-link@^1.2.3":
+  "integrity" "sha512-p67CMEFP7kOG1JZ0ZkYZwRDa369w5PIjtMjvrQd/HnIV8FRsHRqLqK+oAZQnFa1DDdZtOtHTi+aMIW6EatC2jg=="
+  "resolved" "https://registry.npmjs.org/apollo-link/-/apollo-link-1.2.14.tgz"
+  "version" "1.2.14"
   dependencies:
     "apollo-utilities" "^1.3.0"
     "ts-invariant" "^0.4.0"
     "tslib" "^1.9.3"
-    "zen-observable-ts" "^0.8.20"
+    "zen-observable-ts" "^0.8.21"
 
 "apollo-server-caching@^0.5.0":
   "integrity" "sha512-l7ieNCGxUaUAVAAp600HjbUJxVaxjJygtPV0tPTe1Q3HkPy6LEWoY6mNHV7T268g1hxtPTxcdRu7WLsJrg7ufw=="
@@ -5106,7 +5114,7 @@
     "http-errors" "^1.7.2"
     "object-path" "^0.11.4"
 
-"graphql@^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.1 || ^14.0.2", "graphql@^0.10.5 || ^0.11.3 || ^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@^0.11.3 || ^0.12.3 || ^0.13.0 || ^14.0.0", "graphql@^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@^0.13.0 || ^14.0.0", "graphql@^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0", "graphql@^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0", "graphql@^14.0.0 || ^15.0.0 || ^16.0.0", "graphql@^14.2.1", "graphql@^14.3.1", "graphql@^14.5.3", "graphql@^14.5.8", "graphql@0.11.7 || ^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@0.13.1 - 14":
+"graphql@^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.1 || ^14.0.2", "graphql@^0.10.5 || ^0.11.3 || ^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@^0.11.3 || ^0.12.3 || ^0.13.0 || ^14.0.0 || ^15.0.0", "graphql@^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@^0.13.0 || ^14.0.0", "graphql@^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0", "graphql@^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0", "graphql@^14.0.0 || ^15.0.0 || ^16.0.0", "graphql@^14.2.1", "graphql@^14.3.1", "graphql@^14.5.3", "graphql@^14.5.8", "graphql@0.11.7 || ^0.12.0 || ^0.13.0 || ^14.0.0", "graphql@0.13.1 - 14":
   "integrity" "sha512-MMwmi0zlVLQKLdGiMfWkgQD7dY/TUKt4L+zgJ/aR0Howebod3aNgP5JkgvAULiR2HPVZaP2VEElqtdidHweLkg=="
   "resolved" "https://registry.npmjs.org/graphql/-/graphql-14.5.8.tgz"
   "version" "14.5.8"
@@ -10350,10 +10358,10 @@
     "y18n" "^3.2.1"
     "yargs-parser" "^5.0.0"
 
-"zen-observable-ts@^0.8.20":
-  "integrity" "sha512-2rkjiPALhOtRaDX6pWyNqK1fnP5KkJJybYebopNSn6wDG1lxBoFs2+nwwXKoA6glHIrtwrfBBy6da0stkKtTAA=="
-  "resolved" "https://registry.npmjs.org/zen-observable-ts/-/zen-observable-ts-0.8.20.tgz"
-  "version" "0.8.20"
+"zen-observable-ts@^0.8.21":
+  "integrity" "sha512-Yj3yXweRc8LdRMrCC8nIc4kkjWecPAUVh0TI0OUrWXx6aX790vLcDlWca6I4vsyCGH3LpWxq0dJRcMOFoVqmeg=="
+  "resolved" "https://registry.npmjs.org/zen-observable-ts/-/zen-observable-ts-0.8.21.tgz"
+  "version" "0.8.21"
   dependencies:
     "tslib" "^1.9.3"
     "zen-observable" "^0.8.0"
